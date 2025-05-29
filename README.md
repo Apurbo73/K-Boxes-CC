@@ -1,4 +1,4 @@
-### K-Boxes-CC:
+### K Boxes-CC:
 
 
 This C++ code solves a problem involving **priority-based accumulation** of values while maintaining an efficient record of the **top K largest values** seen so far, according to a specific order defined by the input.
