@@ -110,4 +110,3 @@ This is useful in scenarios like:
 * Picking top-K influences before a person joins a network.
 * Finding top-K best rewards collected before reaching a level in a game.
 
-Let me know if you'd like a [dry run example](f) or [visual heap simulation](f) for clarity.
