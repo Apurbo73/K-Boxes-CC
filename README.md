@@ -114,5 +114,4 @@ This code processes multiple test cases where, for each case, it computes an arr
 
 To maintain the top `K` values dynamically, a min-heap (priority queue) is used. At each step, the value `B[i]` at the current level is either added to the heap (if there’s room) or replaces the smallest value in the heap if it’s larger. This keeps the heap always holding the top `K` largest values seen so far, and `sumTopK` tracks their total. The result array is built in this manner and printed at the end of each test case.
 
-Let me know if you'd like a [visual heap example](f) or [step-by-step input simulation](f).
 
