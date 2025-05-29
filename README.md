@@ -110,3 +110,9 @@ This is useful in scenarios like:
 * Picking top-K influences before a person joins a network.
 * Finding top-K best rewards collected before reaching a level in a game.
 
+This code processes multiple test cases where, for each case, it computes an array `ans` such that `ans[i]` holds the sum of the top `K` largest `B[j]` values corresponding to positions `j` where `A[j]` (a level number) is less than `A[i]`. To do this efficiently, the code maps each level to its index using the `pos` array, then iterates through levels from `1` to `N` in order, updating the result at the corresponding index using the current sum of top `K` values.
+
+To maintain the top `K` values dynamically, a min-heap (priority queue) is used. At each step, the value `B[i]` at the current level is either added to the heap (if there’s room) or replaces the smallest value in the heap if it’s larger. This keeps the heap always holding the top `K` largest values seen so far, and `sumTopK` tracks their total. The result array is built in this manner and printed at the end of each test case.
+
+Let me know if you'd like a [visual heap example](f) or [step-by-step input simulation](f).
+
